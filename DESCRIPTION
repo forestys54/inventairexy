@@ -1,0 +1,45 @@
+Package: inventoryxy
+Title: An Amazing Shiny App
+Version: 0.0.1.9000
+Authors@R: person("Prenom", "Nom", email = "prenom.nom@forestys.fr", role = c("aut", "cre"))
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    shiny,
+    shinyjs,
+    shinythemes,
+    shinydashboard,
+    shinydashboardPlus,
+    shinyFiles,
+    shinyWidgets,
+    shiny.i18n,
+    golem,
+    processx,
+    htmltools,
+    attempt,
+    config,
+    DT,
+    glue,
+    dplyr,
+    readr,
+    ggplot2,
+    magrittr,
+    pkgload,
+    leaflet,
+    raster,
+    sf,
+    sp,
+    scales,
+    rgl,
+    lidR,
+    cowplot,
+    methods,
+    graphics,
+    geometry,
+    stringr,
+    jsonlite
+RoxygenNote: 7.1.0
+Suggests: 
+    testthat

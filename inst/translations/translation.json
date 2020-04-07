@@ -1,0 +1,23 @@
+
+{
+  "languages": ["en", "fr"],
+  "translation": [
+    {"en": "Project options", "fr": "Options du projet"},
+    {"en": "Project", "fr": "Projet"},
+    {"en": "Directory for project: \u00a0", "fr": "Répertoire du projet : \u00a0"},
+    {"en": "Name of project: \u00a0", "fr": "Nom du projet : \u00a0"},
+    {"en": "Choice a plot: \u00a0", "fr": "Choisir une placette : \u00a0"},
+    {"en": "Loading parameters", "fr": "Chargement des paramètres"},
+    {"en": "Load parameters", "fr": "Charge les paramètres"},
+    {"en": "Save parameters as", "fr": "Sauver les paramètres"},
+    {"en": "Save parameters of the project as", "fr": "Sauver les paramètres du projet"},
+    {"en": "Import a JSON file with parameters of the project", "fr": "Importe le fichier JSON des paramètres du projet"},
+    {"en": "\u2000Close application", "fr": "\u2000Fermer l'application"},
+    {"en": "Unable to download", "fr": "Enregistrement impossible"},
+    {"en": "The file ", "fr": "Le fichier "},
+    {"en": " does not exist.", "fr": " n'existe pas."},
+    {"en": "must be a list or a path of a JSON parameter file.", "fr": "doit être une liste de répertoire"},
+    {"en": "The name of project is empty!", "fr": "Le nom du projet est vide !"},
+    {"en": "Choose directory for project", "fr": "Choisir un répertoire pour le projet"}
+    ]
+}
