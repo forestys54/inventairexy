@@ -19,7 +19,6 @@ Imports:
     processx,
     htmltools,
     attempt,
-    config,
     DT,
     glue,
     dplyr,
@@ -40,6 +39,6 @@ Imports:
     geometry,
     stringr,
     jsonlite
-RoxygenNote: 7.1.0
+RoxygenNote: 7.0.2
 Suggests: 
     testthat

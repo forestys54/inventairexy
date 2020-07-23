@@ -17,7 +17,6 @@
     {"en": "The file ", "fr": "Le fichier "},
     {"en": " does not exist.", "fr": " n'existe pas."},
     {"en": "must be a list or a path of a JSON parameter file.", "fr": "doit être une liste de répertoire"},
-    {"en": "The name of project is empty!", "fr": "Le nom du projet est vide !"},
-    {"en": "Choose directory for project", "fr": "Choisir un répertoire pour le projet"}
+    {"en": "The name of project is empty!", "fr": "Le nom du projet est vide !"}
     ]
 }

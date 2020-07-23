@@ -9,12 +9,12 @@
 ## Add information about the package that will contain your app
 
 golem::fill_desc(
-  pkg_name = "inventairexy", # The Name of the package containing the App 
-  pkg_title = "Inventaire XY", # The Title of the package containing the App 
-  pkg_description = "An app designed for forest oversight.", # The Description of the package containing the App 
-  author_first_name = "Thibault", # Your First Name
-  author_last_name = "Aubry",  # Your Last Name
-  author_email = "thibault.aubry@forestys.fr",      # Your Email
+  pkg_name = "shinyLiDAR", # The Name of the package containing the App 
+  pkg_title = "PKG_TITLE", # The Title of the package containing the App 
+  pkg_description = "PKG_DESC.", # The Description of the package containing the App 
+  author_first_name = "AUTHOR_FIRST", # Your First Name
+  author_last_name = "AUTHOR_LAST",  # Your Last Name
+  author_email = "AUTHOR@MAIL.COM",      # Your Email
   repo_url = NULL # The (optional) URL of the GitHub Repo
 )     
 
@@ -26,7 +26,7 @@ golem::set_golem_options()
 ## 
 ## If you want to use the MIT licence, README, code of conduct, lifecycle badge, and news
 
-usethis::use_mit_license( name = "FORESTYS" )  # You can set another licence here
+usethis::use_mit_license( name = "Pascal Obstetar" )  # You can set another licence here
 usethis::use_readme_rmd( open = FALSE )
 usethis::use_code_of_conduct()
 usethis::use_lifecycle_badge( "Experimental" )

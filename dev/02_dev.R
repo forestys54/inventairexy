@@ -7,40 +7,8 @@
 
 ## 2.1 Add modules
 ## 
-golem::add_module( name = "s2product" ) # Name of the module
-golem::add_module( name = "dendro" )
-golem::add_module( name = "donneessup") 
-golem::add_module( name = "outputoptions")
-golem::add_module( name = "outputfiles")
-golem::add_module( name = "pop")
-golem::add_module( name = "cumul")
-golem::add_module( name = "incertitude")
-golem::add_module( name = "chargement_tuiles")
-golem::add_module( name = "login_theia")
-golem::add_module( name = "download")
-golem::add_module( name = "print_message")
-golem::add_module( name = "theia_download_python_module")
-golem::add_module( name = "check_chemins")
-golem::add_module( name = "check_liste_param")
-golem::add_module( name = "check_gdal")
-golem::add_module( name = "init")
-golem::add_module( name = "map_update")
-golem::add_module( name = "overlap")
-golem::add_module( name = "map_creation")
-golem::add_module( name = "forest_mode")
-golem::add_module( name = "bbox_mode")
-golem::add_module( name = "vectorfile_mode")
-golem::add_module( name = "draw_mode")
-golem::add_module( name = "presabs")
-golem::add_module( name = "mask_module")
-golem::add_module( name = "prevision_map")
-golem::add_module( name = "helper")
-golem::add_module( name = "paths_update")
-golem::add_module( name = "theia_credentials")
-golem::add_module( name = "all_correctly_set")
-golem::add_module( name = "object_to_return")
-golem::add_module( name = "param_list")
-golem::add_module( name = "modal_dialog")
+golem::add_module( name = "my_first_module" ) # Name of the module
+golem::add_module( name = "my_other_module" ) # Name of the module
 
 ## 2.2 Add dependencies
 

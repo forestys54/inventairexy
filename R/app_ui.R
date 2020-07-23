@@ -4,20 +4,19 @@
 #' @import shinydashboard
 #' @import shinydashboardPlus
 #' @import shinyFiles
-#'
+#' 
 app_ui <- function() {
   tagList(
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # List the first level UI elements here
-    # ui = tags$body(class="skin-red sidebar-mini control-sidebar-open",
-
+    # ui = tags$body(class="skin-blue sidebar-mini control-sidebar-open", 
+    
     dashboardPagePlus(
-      skin = "blue",
       header = dashboardHeaderPlus(
         fixed = TRUE,
         title = tagList(
-          span(class = "logo-lg", "Inventaire XY"),
+          span(class = "logo-lg", "Inventory XY"),
           img(src = "www/ShinyDashboardPlus_FINAL.svg")
         ),
         enable_rightsidebar = TRUE,
@@ -25,11 +24,7 @@ app_ui <- function() {
       ),
       sidebar = dashboardSidebar(
         sidebarMenu(
-          menuItem("Selection des entrees", tabName = "project", icon = icon("gears")),
-          menuItem("Carte des parametres", tabName = "pop", icon = icon("clone")),
-          menuItem("Cumul par entites", tabName = "cumul", icon = icon("calculator"))
-
-
+          menuItem("Project", tabName = "project", icon = icon("gears"))
           # menuItem("Exploration", tabName = "exploration", icon = icon("dashboard")),
         )
       ),
@@ -38,24 +33,7 @@ app_ui <- function() {
           # First tab content
           tabItem(
             tabName = "project",
-            mod_project_ui("project"),
-            # mod_s2product_ui("s2product"),
-            # mod_login_theia_ui("login_theia"),
-            # mod_dendro_ui("dendro"),
-            # mod_donneessup_ui("donneessup"),
-            # mod_outputoptions_ui("outputoptions"),
-            # mod_outputfiles_ui("outputfiles"),
-            br(),
-            br(),
-            actionButton("launch", "Lancer les calculs !", icon = icon("tree"), style = "display:inline-block;horizontal-align:right;") ## Bouton pour lancer l'app, en bas et centre
-          ),
-          tabItem(
-            tabName = "pop",
-            mod_pop_ui("pop")
-          ),
-          tabItem(
-            tabName = "cumul",
-            mod_cumul_ui("cumul")
+            mod_project_ui("project")
           )
           # second tab content
           # tabItem(
@@ -74,7 +52,7 @@ app_ui <- function() {
         )
       ),
       footer = dashboardFooter(
-        left_text = "By FORESTYS",
+        left_text = "By Forestys",
         right_text = "Nancy, 2020"
       )
     )
