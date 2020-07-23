@@ -7,8 +7,15 @@
 
 ## 2.1 Add modules
 ## 
-golem::add_module( name = "my_first_module" ) # Name of the module
-golem::add_module( name = "my_other_module" ) # Name of the module
+golem::add_module( name = "s2product" ) # Name of the module
+golem::add_module( name = "dendro" )
+golem::add_module( name = "donneessup") 
+golem::add_module( name = "outputoptions")
+golem::add_module( name = "outputfiles")
+golem::add_module( name = "cumul")
+golem::add_module( name = "image_rgb")
+golem::add_module( name = "pop")
+golem::add_module( name = "product_selection")
 
 ## 2.2 Add dependencies
 

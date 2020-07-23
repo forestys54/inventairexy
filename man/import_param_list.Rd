@@ -4,14 +4,12 @@
 \alias{import_param_list}
 \title{import_param_list}
 \usage{
-import_param_list(module, rv, session)
+import_param_list(session, rv)
 }
 \arguments{
-\item{module}{Module name}
+\item{session}{Shiny session}
 
 \item{rv}{Reactivevalue list}
-
-\item{session}{Shiny session}
 }
 \value{
 A param list

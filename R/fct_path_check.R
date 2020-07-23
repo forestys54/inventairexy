@@ -1,11 +1,11 @@
 #' path_check
 #'
-#' @param path Directory of projetc
+#' @param path Directory of project
 #'
 #' @return If path ok
 #' @export
 #'
-path_check <- function(path){
+path_check <- function(path) {
   if (length(path) > 0 & path[1] != "") {
     if (!dir.exists(path)) {
       return(renderUI(span(

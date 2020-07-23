@@ -7,7 +7,7 @@
 path_check(path)
 }
 \arguments{
-\item{path}{Directory of projetc}
+\item{path}{Directory of project}
 }
 \value{
 If path ok

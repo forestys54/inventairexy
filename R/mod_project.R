@@ -1,5 +1,5 @@
 # Module UI
-  
+
 #' @title   mod_project_ui and mod_project_server
 #' @description  A shiny Module.
 #'
@@ -11,24 +11,25 @@
 #' @rdname mod_project
 #'
 #' @keywords internal
-#' @export 
-#' @importFrom shiny NS tagList 
+#' @export
+#' @importFrom shiny NS tagList
 #' @importFrom shiny.i18n Translator
-#' 
-mod_project_ui <- function(id){
+#'
+mod_project_ui <- function(id) {
   ns <- NS(id)
-  
+
   i18n <- Translator$new(translation_json_path = "./inst/translations/translation.json")
   i18n$set_translation_language("fr")
-  
+
   tagList(
     tabName = "tab_project",
-    h3(i18n$t("Project options")),
+    br(),
+    br(),
+    br(),
     fluidRow(
       box(
-        title = i18n$t("Project"), 
-        # title = textOutput(ns("title_project")), 
-        status = "primary", 
+        title = i18n$t("Project"),
+        status = "primary",
         solidHeader = TRUE,
         collapsible = TRUE,
         width = 12,
@@ -56,7 +57,7 @@ mod_project_ui <- function(id){
           div(
             div(
               style = "display:inline-block;vertical-align:top;width:50pt;",
-              shinyDirButton(ns("path_project_sel"), "Select", "Specify directory for project")
+              shinyDirButton(ns("path_project_sel"), "Select", i18n$t("Specify directory for project"))
             ),
             div(
               style = "display:inline-block;vertical-align:top;width:calc(90% - 50pt - 3px);",
@@ -64,6 +65,9 @@ mod_project_ui <- function(id){
             )
           )
         ),
+        
+        #### ajout <- pourquoi ? ####
+        
         column(
           width = 2,
           div(
@@ -79,28 +83,35 @@ mod_project_ui <- function(id){
     ) # end fluidrow
   ) # end taglist
 }
-    
+
 # Module Server
-    
+
 #' @rdname mod_project
 #' @export
 #' @keywords internal
 #' @importFrom shiny.i18n Translator
 #' @importFrom shiny updateTextInput
-    
-mod_project_server <- function(input, output, session, rv){
+#' @importFrom shinyFiles getVolumes shinyDirChoose parseDirPath
+#' @importFrom stats na.omit
+#' @importFrom stringr str_extract
+#' @importFrom magrittr %>%
+#' 
+
+mod_project_server <- function(input, output, session, rv) {
   ns <- session$ns
   
-  volumes <- c("Home" = path.expand("~"), shinyFiles::getVolumes()())
-  
+ observe({
+  rv$volumes <- c("Home" = path.expand("~"), shinyFiles::getVolumes()())
+ })
+
   observe({
     shinyDirChoose(input, "path_project_sel", roots = volumes)
   })
-  
+
   observe({
     updateSelectInput(session, "plotin", choices = c("Choisir" = "", rv$nom))
   })
-  
+
   observe({
     project_name <- input$project_name
     rv$project_name <- project_name
@@ -116,12 +127,10 @@ mod_project_server <- function(input, output, session, rv){
   observe({
     output$path_project_errorness <- path_check(input$path_project_textin)
   })
-  
 }
-    
+
 ## To be copied in the UI
 # mod_project_ui("project_ui_1")
-    
+
 ## To be copied in the server
 # callModule(mod_project_server, "project_ui_1")
- 

@@ -7,12 +7,12 @@
 check_param(param_list, rv)
 }
 \arguments{
-\item{param_list}{Param list}
+\item{param_list}{List param}
 
-\item{rv}{Reactive value}
+\item{rv}{Reactive values}
 }
 \value{
-Check param
+True or False
 }
 \description{
 check_param

@@ -1,2 +1,5 @@
-globalVariables(c("treeID",
-                  "project_dir"))
+globalVariables(c(
+  "treeID",
+  "project_dir",
+  "param_list"
+))

@@ -1,6 +1,6 @@
 Package: inventoryxy
 Title: An Amazing Shiny App
-Version: 0.0.1.9000
+Version: 0.1
 Authors@R: person("Prenom", "Nom", email = "prenom.nom@forestys.fr", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
@@ -19,11 +19,13 @@ Imports:
     processx,
     htmltools,
     attempt,
+    config,
     DT,
     glue,
     dplyr,
     readr,
     ggplot2,
+    foreach,
     magrittr,
     pkgload,
     leaflet,
@@ -38,7 +40,13 @@ Imports:
     graphics,
     geometry,
     stringr,
-    jsonlite
-RoxygenNote: 7.0.2
+    jsonlite,
+    XML, 
+    geojsonio,
+    data.table,
+    leaflet.extras,
+    mapedit,
+    xfun
+RoxygenNote: 7.1.0
 Suggests: 
     testthat
