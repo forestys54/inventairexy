@@ -26,10 +26,10 @@ app_ui <- function() {
       sidebar = dashboardSidebar(
         sidebarMenu(
           menuItem("Selection des entrees", tabName = "project", icon = icon("gears")),
-          menuItem("Selection des indices spectraux", tabName = "indices", icon = icon("")),
-          menuItem("Creation de carte RGB", tabName = "rgbmap", icon = icon("tree")),
-          menuItem("Carte des parametres", tabName = "pop", icon = icon("clone")),
-          menuItem("Cumul par entites", tabName = "cumul", icon = icon("calculator"))
+          menuItem("Selection des indices spectraux", tabName = "project", icon = icon("")),
+          menuItem("Creation de carte RGB", tabName = "project", icon = icon("tree")),
+          menuItem("Carte des parametres", tabName = "project", icon = icon("clone")),
+          menuItem("Cumul par entites", tabName = "project", icon = icon("calculator"))
           
           
           # menuItem("Exploration", tabName = "exploration", icon = icon("dashboard")),
@@ -90,7 +90,7 @@ app_ui <- function() {
 #' @import shiny
 golem_add_external_resources <- function() {
   addResourcePath(
-    "www", system.file("app/www", package = "inventoryxy")
+    "www", system.file("app/www", package = "inventairexy")
   )
   
   tags$head(

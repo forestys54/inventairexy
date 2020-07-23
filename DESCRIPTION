@@ -1,4 +1,4 @@
-Package: inventoryxy
+Package: inventairexy
 Title: An Amazing Shiny App
 Version: 0.1
 Authors@R: person("Prenom", "Nom", email = "prenom.nom@forestys.fr", role = c("aut", "cre"))
@@ -47,6 +47,6 @@ Imports:
     leaflet.extras,
     mapedit,
     xfun
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 Suggests: 
     testthat

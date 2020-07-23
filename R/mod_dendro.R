@@ -123,7 +123,7 @@ mod_dendro_server <- function(input, output, session, rv){
     showModal(load_plots(rv, session))
   })
 
-    rv$placettes_path <- st_transform(rv$placettes_path, 2154)
+    # rv$placettes_path <- st_transform(rv$placettes_path, 2154)
    
   # Set directory
   observe({
